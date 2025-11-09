@@ -6,9 +6,6 @@ if [ "$(id -u)" = "0" ]; then
   exec su-exec ncsync:ncsync /usr/local/bin/entrypoint.sh "$@"
 fi
 
-NC_URL="${NC_URL:-}"
-NC_USER="${NC_USER:-}"
-NC_PASS="${NC_PASS:-}"
 NC_REMOTE_PATH="${NC_REMOTE_PATH:-/}"
 NC_INTERVAL="${NC_INTERVAL:-600}"
 NC_ARGS="${NC_ARGS:-}"
