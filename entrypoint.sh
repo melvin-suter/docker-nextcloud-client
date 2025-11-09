@@ -32,7 +32,7 @@ if [ -f "/config/unsyncedfolders" ]; then
 fi
 
 run_once() {
-  echo "==> Running nextcloudcmd sync at $(date -Iseconds)"
+  echo "==> Running nextcloudcmd sync at $(date -Iseconds) for user $NC_USER"
   # Notes:
   #  - --path selects a remote subfolder (works on recent clients)
   #  - nextcloudcmd does a single pass and exits (we loop if NC_INTERVAL>0)
