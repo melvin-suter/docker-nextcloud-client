@@ -11,7 +11,7 @@ RUN apk add --no-cache \
       su-exec
 
 # Create a non-root user to run the sync
-ARG PUID=1000
+ARG PUID=3000
 ARG PGID=1000
 RUN addgroup -g ${PGID} ncsync && \
     adduser  -D -H -G ncsync -u ${PUID} ncsync
