@@ -26,10 +26,7 @@ VOLUME ["/data", "/config"]
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
-ENV NC_URL="" \
-    NC_USER="" \
-    NC_PASS="" \
-    NC_REMOTE_PATH="/" \
+ENV NC_REMOTE_PATH="/" \
     NC_INTERVAL="600" \
     NC_ARGS=""
 

@@ -25,4 +25,4 @@ docker run -d --name nc-sync \
   -e NC_INTERVAL="600" \
   -v /srv/projectA:/data \
   -v /srv/nc-config:/config \
-  ghcr.io/youruser/nextcloud-client-alpine:latest
+  ghcr.io/melvin-suter/nextcloud-client-alpine:latest
